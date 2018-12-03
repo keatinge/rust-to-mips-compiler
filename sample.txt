@@ -1,0 +1,23 @@
+
+
+fn main() {
+    for i in 2..-1 {
+        let prime:i32 = 1;
+        for j in 2..i {
+             let rem:i32 = mips_rem(i,j);
+             if rem == 0 {
+                prime = 0;
+             }
+        }
+
+        if prime == 1 {
+            mips_print_i32(i);
+        }
+
+    }
+
+}
+
+
+
+
